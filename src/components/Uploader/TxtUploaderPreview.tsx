@@ -20,7 +20,7 @@ export default function TxtUploaderPreview({ fileSize, fileName, handleRemoveFil
                                 {fileName}
                             </p>
                             <p className="uploader-preview_filesize">
-                                {fileSize} KB
+                                {fileSize} bytes
                             </p>
                         </div>
                     </div>

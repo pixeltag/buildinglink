@@ -16,7 +16,8 @@
     .uploader_title {
       color: #fff;
     }
-    .uploader_description {
+    .uploader_description,
+    .uploader_logger {
       color: #fdeecb;
     }
   }
@@ -36,6 +37,14 @@
 }
 
 .uploader_description {
+  font-size: 0.8rem;
+  color: rgb(121, 121, 121);
+}
+
+.uploader_logger {
+  border-top: 1px solid #ededed;
+  margin-top: 1rem;
+  padding-top: 0.7rem;
   font-size: 0.8rem;
   color: rgb(121, 121, 121);
 }
