@@ -5,29 +5,29 @@ export default function FileContentStatus({ data }: { data: string }) {
     const [countWords, setCountWords] = useState<{ [key: string]: number } | null>(null);
 
     useEffect(() => {
+        const regex = /\w+/g
+        // Remove all special characters and convert all characters to lowercase
+        const words = data.toLowerCase().match(regex)
         const cache: { [key: string]: number } = {};
-        // Remove all special characters
-        const filteredString = data.replace(/[^A-Za-z 0-9]/g, ' ').toLowerCase() //
-        // split all the words in array
-        const dataArr = filteredString.split(' ');
 
-        dataArr.forEach(w => {
-            if (cache[w]) {
-                cache[w]++;
-            } else {
-                cache[w] = 1
-            }
-        })
+        if (words) {
+            words.forEach(w => {
+                if (cache[w]) {
+                    cache[w]++;
+                } else {
+                    cache[w] = 1
+                }
+            })
+        }
 
-        setCountWords(cache)
-        console.log(cache);
+        const sortableCache = Object.entries(cache)
+            .sort(([, a], [, b]) => b - a)
+            .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
 
+        setCountWords(sortableCache)
     }, [data])
 
     return (
-
-
-
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg w-full mt-5">
             <table className="w-full text-sm text-left rtl:text-right text-gray-500">
                 <thead className="text-xs text-gray-700 uppercase">
@@ -42,7 +42,6 @@ export default function FileContentStatus({ data }: { data: string }) {
                 </thead>
                 <tbody>
                     {countWords && Object.keys(countWords).map(key => (
-
                         <tr className="border-b border-gray-200">
                             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50">
                                 {key}
@@ -52,7 +51,6 @@ export default function FileContentStatus({ data }: { data: string }) {
                             </td>
                         </tr>
                     ))}
-
                 </tbody>
             </table>
         </div>
