@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function TxtUploaderPreview({ fileSize, fileName, handleRemoveFile }: { fileSize: number, fileName: string, handleRemoveFile: () => void }) {
+export default function TxtUploaderPreview({ fileSize, fileName, content, handleRemoveFile }: { fileSize: number, fileName: string, content: string | null, handleRemoveFile: () => void }) {
     return (
         <ul className="uploader-preview">
             <li>
@@ -34,6 +34,9 @@ export default function TxtUploaderPreview({ fileSize, fileName, handleRemoveFil
                             </svg>
                         </button>
                     </div>
+                </div>
+                <div className='uploader-preview_content'>
+                    {content}
                 </div>
             </li>
         </ul>

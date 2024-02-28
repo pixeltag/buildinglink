@@ -77,7 +77,7 @@ export default function TxtUploader() {
             </div>
 
             {fileName && fileSize && (
-                <TxtUploaderPreview fileName={fileName} fileSize={fileSize} handleRemoveFile={handleRemoveFile} />
+                <TxtUploaderPreview fileName={fileName} fileSize={fileSize} handleRemoveFile={handleRemoveFile} content={fileContent} />
             )}
 
             {fileContent && (
