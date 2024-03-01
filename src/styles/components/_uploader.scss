@@ -1,0 +1,50 @@
+.uploader {
+  background-color: #fff;
+  border: 2px dashed #dbb65f;
+  padding: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1.5;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #dbb65f;
+    color: #fff;
+
+    .uploader_icon,
+    .uploader_title {
+      color: #fff;
+    }
+    .uploader_description,
+    .uploader_logger {
+      color: #fdeecb;
+    }
+  }
+}
+
+.uploader_icon {
+  width: 32px;
+  height: 32px;
+  color: #dbb65f;
+  margin-bottom: 0.1rem;
+}
+
+.uploader_title {
+  font-size: 0.9rem;
+  color: #b1934c;
+  font-weight: 500;
+}
+
+.uploader_description {
+  font-size: 0.8rem;
+  color: rgb(121, 121, 121);
+}
+
+.uploader_logger {
+  border-top: 1px solid #ededed;
+  margin-top: 1rem;
+  padding-top: 0.7rem;
+  font-size: 0.8rem;
+  color: rgb(121, 121, 121);
+}
