@@ -16,10 +16,10 @@ export default function TxtUploaderPreview({ fileSize, fileName, content, handle
                         </div>
 
                         <div>
-                            <p className="uploader-preview_filename">
+                            <p className="uploader-preview_filename" data-testid='file-name'>
                                 {fileName}
                             </p>
-                            <p className="uploader-preview_filesize">
+                            <p className="uploader-preview_filesize" data-testid='file-size'>
                                 {fileSize} bytes
                             </p>
                         </div>
@@ -28,6 +28,7 @@ export default function TxtUploaderPreview({ fileSize, fileName, content, handle
                         <button
                             type="button"
                             onClick={() => handleRemoveFile()}
+                            data-testid="remove-btn"
                             className="uploader-preview_button">
                             <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
@@ -35,7 +36,7 @@ export default function TxtUploaderPreview({ fileSize, fileName, content, handle
                         </button>
                     </div>
                 </div>
-                <div className='uploader-preview_content'>
+                <div className='uploader-preview_content' data-testid="content">
                     {content}
                 </div>
             </li>

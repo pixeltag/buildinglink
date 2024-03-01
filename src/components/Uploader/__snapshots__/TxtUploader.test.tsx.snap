@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="uploader"
+        data-testid="txtuploader"
+      >
+        <label
+          for="dropzone-file"
+        >
+          <div
+            class="uploader_wrapper"
+            data-testid="uploaderWrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="uploader_icon"
+              fill="none"
+              viewBox="0 0 20 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+            <p>
+              <span
+                class="uploader_title"
+              >
+                Click to upload
+              </span>
+            </p>
+            <p
+              class="uploader_description"
+            >
+              .TXT extension only
+            </p>
+          </div>
+          <input
+            accept=".txt"
+            aria-label="input-file"
+            class="hidden"
+            id="dropzone-file"
+            type="file"
+          />
+        </label>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="uploader"
+      data-testid="txtuploader"
+    >
+      <label
+        for="dropzone-file"
+      >
+        <div
+          class="uploader_wrapper"
+          data-testid="uploaderWrapper"
+        >
+          <svg
+            aria-hidden="true"
+            class="uploader_icon"
+            fill="none"
+            viewBox="0 0 20 16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+          <p>
+            <span
+              class="uploader_title"
+            >
+              Click to upload
+            </span>
+          </p>
+          <p
+            class="uploader_description"
+          >
+            .TXT extension only
+          </p>
+        </div>
+        <input
+          accept=".txt"
+          aria-label="input-file"
+          class="hidden"
+          id="dropzone-file"
+          type="file"
+        />
+      </label>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
